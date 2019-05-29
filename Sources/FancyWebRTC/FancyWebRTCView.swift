@@ -23,7 +23,7 @@ import WebRTC
     
     public convenience init(){
         self.init(frame: .zero)
-        print("THIS LOG ADDED BY MEMO convenience.init")
+        print("THIS LOG ADDED BY MEMO convenience.init log edit")
         self.videoView = RTCEAGLVideoView.init(frame: frame)
         if(self.videoView != nil){
             self.videoView!.delegate = self
