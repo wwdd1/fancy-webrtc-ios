@@ -23,6 +23,7 @@ import WebRTC
     
     public convenience init(){
         self.init(frame: .zero)
+        print("THIS LOG ADDED BY MEMO convenience.init")
         self.videoView = RTCEAGLVideoView.init(frame: frame)
         if(self.videoView != nil){
             self.videoView!.delegate = self
@@ -33,6 +34,7 @@ import WebRTC
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        print("THIS LOG ADDED BY MEMO override init")
         self.videoView = RTCEAGLVideoView.init(frame: frame)
         if(self.videoView != nil){
             self.videoView!.delegate = self
@@ -48,6 +50,7 @@ import WebRTC
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        print("THIS LOG ADDED BY MEMO required init")
         self.videoView = RTCEAGLVideoView.init(coder: aDecoder)
         if(self.videoView != nil){
             self.videoView!.delegate = self
